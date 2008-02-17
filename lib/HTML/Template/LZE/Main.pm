@@ -1,8 +1,7 @@
 package HTML::Template::LZE::Main;
-use HTML::Template::LZE::Template;
-
-# use strict;
-# use warnings;
+use HTML::Template::LZE;
+use strict;
+use warnings;
 require Exporter;
 use vars qw($DefaultClass @EXPORT  @ISA  $login $right $htmlright $template);
 our $style = 'Crystal';
@@ -11,8 +10,8 @@ our $size  = 16;
 our $server;
 @HTML::Template::LZE::Main::EXPORT_OK   = qw(all initMain Header Footer);
 %HTML::Template::LZE::Main::EXPORT_TAGS = ('all' => [qw(initMain Header Footer)]);
-@HTML::Template::LZE::Main::ISA         = qw( Exporter HTML::Template::LZE::Template);
-$HTML::Template::LZE::Main::VERSION     = '0.24';
+@HTML::Template::LZE::Main::ISA         = qw( Exporter HTML::Template::LZE);
+$HTML::Template::LZE::Main::VERSION     = '0.25';
 $DefaultClass                           = 'HTML::Template::LZE::Main' unless defined $HTML::Template::LZE::Main::DefaultClass;
 
 =head1 NAME
@@ -31,7 +30,7 @@ load The "Main Template" for CGI::LZE::Blog
 
 =head1 SEE ALSO
 
-L<CGI::LZE::Blog> L<HTML::Template::LZE::Template>
+L<CGI::LZE::Blog> L<HTML::Template::LZE>
 
 =head1 Public
 
