@@ -11,7 +11,7 @@ our $server;
 @HTML::Template::LZE::Main::EXPORT_OK   = qw(all initMain Header Footer);
 %HTML::Template::LZE::Main::EXPORT_TAGS = ('all' => [qw(initMain Header Footer)]);
 @HTML::Template::LZE::Main::ISA         = qw( Exporter HTML::Template::LZE);
-$HTML::Template::LZE::Main::VERSION     = '0.25';
+$HTML::Template::LZE::Main::VERSION     = '0.26';
 $DefaultClass                           = 'HTML::Template::LZE::Main' unless defined $HTML::Template::LZE::Main::DefaultClass;
 
 =head1 NAME
